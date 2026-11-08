@@ -5,9 +5,10 @@ import { UsuariosModule } from '../usuarios/usuarios.module';
 import { CategoriasModule } from '../categorias/categorias.module';
 import { TareasModule } from '../tareas/tareas.module';
 import { AuthModule } from '../auth/auth.module';
+import { WhatsappModule } from '../whatsapp/whatsapp.module';
 
 @Module({
-  imports: [UsuariosModule, CategoriasModule, TareasModule, AuthModule],
+  imports: [UsuariosModule, CategoriasModule, TareasModule, AuthModule, WhatsappModule],
   controllers: [AppController],
   providers: [AppService],
 })
