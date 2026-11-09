@@ -107,6 +107,21 @@ Los cinco módulos (`usuarios`, `categorias`, `tareas`, `auth` y `whatsapp`) exp
 
 Además, `GET /` devuelve un mensaje de bienvenida de la API.
 
+## Postman
+
+La colección con los endpoints de todos los módulos está en `docs/postman/GestorDeTareasAPI.postman_collection.json`.
+
+Contiene 26 requests: la ruta raíz y las 5 rutas CRUD de cada módulo, organizadas en una carpeta por módulo. Cada request tiene su descripción, un cuerpo de ejemplo (en las de `POST` y `PATCH`) y un test que valida el código de estado de la respuesta.
+
+### Cómo usarla
+
+1. Tener la API corriendo con `npm run start:dev`.
+2. En Postman, usar **Import** y seleccionar el archivo de la colección.
+3. Verificar que la variable de colección `baseUrl` coincida con la URL de la API (por defecto `http://localhost:4000`).
+4. Ejecutar las requests una por una o todas juntas con **Run**.
+
+Para enviar requests a `localhost` se necesita la aplicación de escritorio de Postman (o su Desktop Agent).
+
 ## Flujo de ramas
 
 | Rama | Uso |
